@@ -1,0 +1,13 @@
+<ion-view view-title="Home" hide-back-button="true" ng-init="checkUser()">
+        <ion-content class="padding-top">
+          <h1>News</h1>
+            <ion-list>
+              <ion-item ng-repeat="item in items">
+                {{item.name}}
+              </ion-item>
+            </ion-list>
+          <!-- TODO Profile -->
+          <!-- <button ng-click="profile()" class="button button-outline button-assertive">Profile</button> -->
+          <button ng-click="logOut()" class="button button-full button-positive">Logout</button>
+        </ion-content>
+</ion-view>
